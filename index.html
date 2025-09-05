@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ren's Multiple Page</title>
+  <style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Monospace;
+    background: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url("bg.png");
+    background-size: cover;
+    background-position: center;
+    color: #90e8c8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8;
+  }
+  
+  header {
+    background-color: #141414;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .logo {
+    width: 75px;
+    cursor: pointer;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 24px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #90e8c8;
+    padding: 0 2px;
+    transition: 0.5s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #90e8c8;
+    color: black;
+  }
+  
+  .hero {
+    color: #90e8c8;
+    text-align: center;
+    line-height: 1.8;
+    margin: auto;
+    padding: 300px 20px;
+    max-width: 730px;
+  }
+  
+  .section {
+    padding: 50px 20px;
+    text-align: center;
+    color: #90e8c8;
+  }
+  
+  #home h2 {
+    font-size: 24px;
+  }
+  
+  #home p {
+    line-height: 3;
+    font-size: 18px;
+  }
+  
+  .pindah button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid #90e8c8;
+    background: transparent;
+    color: #90e8c8;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: Monospace;
+  }
+  
+  .pindah button:hover {
+    background-color: #90e8c8;
+    color: black;
+  }
+  
+  footer {
+    font-size: 1rem;
+    margin-top: auto;
+    background-color: #141414;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  @media (max-width: 768px) {
+  header {
+    justify-content: flex-end;
+    padding: 20px;
+  }
+  
+  nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px 40px; 
+  margin-right: 5px;
+  padding: 0;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="logo.png" alt="" class="logo">
+      <nav>
+        <ul>
+          <li><a href="#" class="b">Home</a></li>
+          <li><a href="about.html" class="b">About</a></li>
+          <li><a href="proj.html" class="c">Projects</a></li>
+          <li><a href="contact.html" class="c">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <h2>Welcome to Ren's Multiple Page website! (–~–)/ </h2>
+      <p>Sebuah website original yang dibuat oleh Varen.</p>
+      <a href="about.html" class="pindah">
+        <button>About Me</button>
+        <a href="proj.html" class="pindah">
+        <button>My Projects</button>
+      </a>
+    </section>
+  </main>
+  <footer>
+    <p>©2025, Ren's Multiple Page</p>
+  </footer>
+</body>
+</html>
